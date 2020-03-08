@@ -1,0 +1,5 @@
+package com.nt.jdbc;
+
+public class GuiAppUsingThreeStatement {
+	public static final String INSERT_STUDENT_QUERY="INSERT INTO STUDENT VALUES(?,?,?)";
+}

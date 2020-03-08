@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script language="javaScript" >
+			function validation(frm){
+				alert("javascript started");
+			}
+		</script>
+	</head>
+	<body>
+		<h1 style="color:blue"><b><center><u>Check Marrage Eligibility</u></center></b></h1>
+		<noscript></noscript>
+		<form action="http://localhost:2525/MarrageApp_Duplicate/marrageurl" method="GET" name="frm" onsubmit="return validate(this)"><br>
+		<div style="margin-left:400px">
+			Person Name :<input type="text" name="pname" style="margin:5px;border-radius:10px;color:blue;border-color:blue;outline:none"/><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;Person Age :<input type="password" name="page"
+			style="margin-bottom:5px;border-radius:10px;color:blue;border-color:blue;outline:none;"/><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			male<input type="radio" name="pgender" value="male"/>&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;
+			female<input type="radio" name="pgender" value="female"/><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="submit" value="Check Marrage Eligibility" style="border-color:blue;color:blue;margin-top:10px" />
+		</div>
+		</form>
+	</body>
+</html>

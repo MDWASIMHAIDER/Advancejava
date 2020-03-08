@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 style="text-align:center;color:green"><b><u>Checking Country Capital</u></b></h1>
+	<form name="frm" action="countryurl">
+	   <select name="country" onChange="frm.submit()">
+	      <option>--select--</option>
+		  <option value="india">India</option>
+		  <option value="aus">Austraila</option>
+		  <option value="indo">Indonesia</option>
+	   </select>
+	</form>
+</body>
+</html>

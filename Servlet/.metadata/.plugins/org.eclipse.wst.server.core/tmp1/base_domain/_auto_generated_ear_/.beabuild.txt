@@ -1,0 +1,3 @@
+D\:/AdvanceJava/Servlet/WDataSourseServlet/WebContent = WDataSourseServlet.war
+D\:/AdvanceJava/Servlet/.metadata/.plugins/org.eclipse.core.resources/WDataSourseServlet/build/weboutput = WDataSourseServlet.war
+D\:/AdvanceJava/Servlet/WDataSourseServlet/build/classes = WDataSourseServlet.war/WEB-INF/classes

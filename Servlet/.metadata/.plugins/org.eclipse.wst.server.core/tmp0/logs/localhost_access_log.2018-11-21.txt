@@ -1,0 +1,11 @@
+127.0.0.1 - - [21/Nov/2018:23:41:21 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:41:23 +0530] "GET /MarrageApp/ HTTP/1.1" 200 948
+127.0.0.1 - - [21/Nov/2018:23:53:34 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:53:35 +0530] "GET /MarrageApp/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:53:51 +0530] "GET /MarrageApp/marrageurl?pname=wasim&page=23&pgender=male HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:54:14 +0530] "GET /MarrageApp/marrageurl?pname=wasim&page=16&pgender=male HTTP/1.1" 200 66
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:54:28 +0530] "GET /MarrageApp/marrageurl?pname=pooja&page=19&pgender=male HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:54:45 +0530] "GET /MarrageApp/marrageurl?pname=pooja&page=19&pgender=female HTTP/1.1" 200 70
+127.0.0.1 - - [21/Nov/2018:23:57:28 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:57:40 +0530] "GET /MarrageApp/marrageurl?pname=wasim&page=22&pgender=male HTTP/1.1" 405 1112
+0:0:0:0:0:0:0:1 - - [21/Nov/2018:23:59:18 +0530] "GET /MarrageApp/marrageurl?pname=wasim&page=22&pgender=male HTTP/1.1" 405 1112

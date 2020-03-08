@@ -1,0 +1,6 @@
+<web-app>
+  <display-name>WebAppOne</display-name>
+  <welcome-file-list>
+    <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+</web-app>

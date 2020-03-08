@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;city2&apos; in &apos;com.nt.jdbc.OracleTest.main(...)&apos; to &apos;course2&apos;&#x0D;&#x0A;- Original project: &apos;OracleSelectTset&apos;&#x0D;&#x0A;- Original element: &apos;com.nt.jdbc.OracleTest.main(String[]).city2&apos;&#x0D;&#x0A;- Renamed element: &apos;city2&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;city2&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.nt.jdbc{OracleTest.java[OracleTest~main~\[QString;@city2!297!338!317!321!QString;!0!false" name="course2" references="true" stamp="1546873026183" version="1.0"/>
+</session>

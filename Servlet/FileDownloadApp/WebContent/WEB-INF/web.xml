@@ -1,0 +1,6 @@
+<web-app>
+  <display-name>FileDownloadApp</display-name>
+  <welcome-file-list>
+    <welcome-file>filedownload.html</welcome-file>
+  </welcome-file-list>
+</web-app>

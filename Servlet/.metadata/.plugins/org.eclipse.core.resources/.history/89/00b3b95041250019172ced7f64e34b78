@@ -1,0 +1,23 @@
+package com.nt.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.Scanner;
+
+public class WorkingWithDate {
+	/*create table working_with_date(applicant_name varchar2(15),
+	 *        age number(3),dob date,doj date,dom date);
+	 *        create sequence id_applicant start with 1 increment by 1;*/
+	private static final String INSERT_DATE_QUERY="INSERT INTO WORKING_WITH_DATE VALUES()"
+	public static void main(String[] args) {
+		try {
+			
+			Connection con=null;
+			Scanner sc=null;
+			Class.forName("oracle.jdbc.driver.OacleDriver");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system","tiger");
+			
+		}
+	}
+
+}

@@ -1,0 +1,6 @@
+127.0.0.1 - - [15/Feb/2019:22:11:42 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [15/Feb/2019:22:11:44 +0530] "GET /SecondJsp_WithInitParam/secondurl HTTP/1.1" 500 3454
+127.0.0.1 - - [15/Feb/2019:22:16:42 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [15/Feb/2019:22:16:43 +0530] "GET /SecondJsp_WithInitParam/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [15/Feb/2019:22:16:49 +0530] "GET /SecondJsp_WithInitParam/SecondJspWithInit.jsp?t1=12&t2=21 HTTP/1.1" 200 31
+0:0:0:0:0:0:0:1 - - [15/Feb/2019:22:16:57 +0530] "GET /SecondJsp_WithInitParam/SecondJspWithInit.jsp?t1=12&t2=21 HTTP/1.1" 200 31

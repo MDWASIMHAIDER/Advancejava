@@ -1,0 +1,11 @@
+127.0.0.1 - - [14/Dec/2018:00:10:48 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:10:48 +0530] "GET /MarrageAppValidation/ HTTP/1.1" 200 1641
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:11:00 +0530] "POST /MarrageAppValidation/marragevalidationurl HTTP/1.1" 200 45
+127.0.0.1 - - [14/Dec/2018:00:11:28 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:11:29 +0530] "GET /ProcessApp_MultipleBtns_Hyperlink/ HTTP/1.1" 200 896
+127.0.0.1 - - [14/Dec/2018:00:12:05 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:12:05 +0530] "GET /FormApp/ HTTP/1.1" 200 1695
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:12:25 +0530] "POST /FormApp/formurl HTTP/1.1" 200 249
+127.0.0.1 - - [14/Dec/2018:00:45:32 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:45:39 +0530] "POST /MarrageAppValidation/marragevalidationurl HTTP/1.1" 200 75
+0:0:0:0:0:0:0:1 - - [14/Dec/2018:00:45:40 +0530] "GET /MarrageAppValidation/home.html HTTP/1.1" 200 1641

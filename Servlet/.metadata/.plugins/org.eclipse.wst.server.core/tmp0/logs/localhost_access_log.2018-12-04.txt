@@ -1,0 +1,10 @@
+127.0.0.1 - - [04/Dec/2018:21:57:02 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:21:57:03 +0530] "GET /ProcessApp_MultipleBtns_Hyperlink/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:21:57:35 +0530] "GET /ProcessApp_MultipleBtns_Hyperlink/processurl?v1=22&v2=11&s1=add HTTP/1.1" 200 4
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:21:57:40 +0530] "GET /ProcessApp_MultipleBtns_Hyperlink/processurl?v1=22&v2=11&s1=mul HTTP/1.1" 200 5
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:21:57:45 +0530] "GET /ProcessApp_MultipleBtns_Hyperlink/processurl?v1=22&v2=11&s1=sub HTTP/1.1" 200 4
+127.0.0.1 - - [04/Dec/2018:23:27:27 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:23:27:27 +0530] "GET /LcTestApp/ HTTP/1.1" 404 1018
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:23:27:35 +0530] "GET /LcTestApp/lcurl HTTP/1.1" 500 3724
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:23:30:00 +0530] "GET /LcTestApp/lcurl HTTP/1.1" 200 46
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:23:30:00 +0530] "GET /favicon.ico HTTP/1.1" 404 1020

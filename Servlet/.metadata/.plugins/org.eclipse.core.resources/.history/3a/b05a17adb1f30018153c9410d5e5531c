@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	function validate(frm){
+		
+		var name=frm.pname.value;
+		var age=frm.page.value;
+		alert("validation started");
+		System.out.println(name);
+		if(name==""){
+			document.getElementById("sp1err").innerHTML="Lawde Naam to dall";
+			frm.pname.focus();
+			return false;
+		}
+		if(age==""){
+			document.getElementById("sp2err").innerHTML="Abe chutiye age bhi bhul gaya";
+			frm.page.focus();
+			return false;
+		}
+		
+	}
+</script>
+</head>
+<body>
+	<h1 style="text-align:center;color:darkred"><u>Check Marrage Eligibility</u></h1>
+	<form name="frm" action="marragevalidationurl" method="GET" onsubmit="return validate(this)">
+	<b>Person Name:</b>&nbsp;<input type="text" name="pname"><span id="sp1err"></span><br>
+	<b>Person Age:</b>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="pname"><span id="sp2err"></span><br>
+	<b>Gender:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="female">Female<br></b>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;<input type="submit" value="Check Eligbility">
+</body>
+</html>

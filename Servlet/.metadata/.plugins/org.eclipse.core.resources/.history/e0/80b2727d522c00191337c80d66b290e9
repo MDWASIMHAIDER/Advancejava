@@ -1,0 +1,35 @@
+package com.nt.jdbc;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class GuiAppUsingThreeStatement extends JFrame implements ActionListener{
+	public static final String INSERT_STUDENT_QUERY="INSERT INTO STUDENT VALUES(?,?,?)";
+	private JLabel lno,lname,ladd,lres;
+	private JTextField tno,tname,tadd;
+	private JButton binsert;
+	private Connection con;
+	private PreparedStatement ps;
+	public GuiAppUsingThreeStatement() {
+		System.out.println("o param constructor");
+		//super class method directly invoked in child class
+		setTitle("GUIAPP");
+		setBackground(Color.green);
+		setLayout(new FlowLayout());
+		setSize(250,250);
+		lno=new JLabel("Student Number:");
+		add(lno);
+		lname=new JLabel("Student Name");
+		
+		
+	}
+	
+}

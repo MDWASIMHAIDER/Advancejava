@@ -1,0 +1,9 @@
+127.0.0.1 - - [01/Jan/2019:21:39:37 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:21:39:37 +0530] "GET /FileUploadApp/ HTTP/1.1" 200 282
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:21:39:37 +0530] "GET /favicon.ico HTTP/1.1" 404 1020
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:21:40:10 +0530] "POST /FileUploadApp/uploadurl HTTP/1.1" 200 162
+127.0.0.1 - - [01/Jan/2019:22:35:12 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:22:35:12 +0530] "GET /FileUploadApp/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:22:35:25 +0530] "POST /FileUploadApp/uploadurl HTTP/1.1" 200 153
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:22:36:06 +0530] "POST /FileUploadApp/uploadurl HTTP/1.1" 200 167
+0:0:0:0:0:0:0:1 - - [01/Jan/2019:22:36:29 +0530] "POST /FileUploadApp/uploadurl HTTP/1.1" 200 -

@@ -1,0 +1,23 @@
+package com.nt.initializer;
+
+import java.util.Set;
+
+import javax.servlet.ServletContainerInitializer;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
+public class MyWebAppInitializer implements ServletContainerInitializer {
+
+	static {
+		System.out.println("myinitialize static block");
+	}
+    public MyWebAppInitializer() {
+		System.out.println("MyWebAppInitializer 0-param constructor");
+	}
+	@Override
+	public void onStartup(Set<Class<?>> arg0, ServletContext arg1) throws ServletException {
+		
+
+	}
+
+}

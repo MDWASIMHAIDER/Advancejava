@@ -1,0 +1,65 @@
+package com.nt.servlet;
+import java.io.*;
+import java.util.ArrayList;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+public class MarrageServlet extends HttpServlet{
+	public void doGet(HttpServletRequest req,
+						HttpServletResponse res)throws ServletException,IOException{
+		res.setContentType("text/html");
+		PrintWriter pw=null;
+		String name=null;
+		String age=null;
+		String gender=null;
+		int rage=0;
+		pw=res.getWriter();
+		ArrayList <String>arrlist=new ArrayList();
+		name=req.getParameter("pname");
+		age=req.getParameter("page");
+		rage=Integer.parseInt(age);
+		gender=req.getParameter("pgender");
+		if(gender.equalsIgnoreCase("male")){
+			if(name==null|| name.length()==0 || name.equals("")){
+				arrlist.add("Please enter valid name");
+			}
+			if(rage==0) {
+				arrlist.add("age cant be empty");
+			}
+		}
+		if(gender.equalsIgnoreCase("female")){
+			if(name==null|| name.length()==0 || name.equals("")){
+				arrlist.add("Please enter valid name");
+			}
+			if(rage==0) {
+				arrlist.add("age cant be empty");
+			}
+		}
+		/*if(rage!=0 && name.length()>=4){
+		if(rage<=17 && gender.equals("male")){
+			pw.println("<h1 style='color:red'>"+name+"You are not eligible for marrage</h1>");
+		}
+		else if(rage<=17 && gender.equals("female")){
+			pw.println("<h1 style='color:red'>Gender=="+gender+"--->"+name+"--You are not eligible for marrage</h1>");
+		}
+		else if(rage>=18 && gender.equals("female")){
+			pw.println("<h1 style='color:green'>"+name+"You are eligible for marrage"+gender+"</h1>");
+		}
+		else if(rage>=17 && gender.equals("male")){
+			pw.println("<h1 style='color:green'>"+name+"You are eligible for marrage---"+gender+"</h1>");
+		}
+		}
+		else{
+			pw.println("<h1>plz insert valid name</h1>");
+		}*/
+		pw.close();
+	}
+	@Override
+	public void doPost(HttpServletRequest req,
+						HttpServletResponse res)
+								throws ServletException,IOException{
+		doGet(req,res);
+	}
+	
+	
+}

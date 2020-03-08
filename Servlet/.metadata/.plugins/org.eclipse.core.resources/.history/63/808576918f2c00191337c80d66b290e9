@@ -1,0 +1,111 @@
+package com.nt.jdbc;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Types;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class GuiAppUsingThreeStatement extends JFrame implements ActionListener{
+	public static final String INSERT_STUDENT_QUERY="INSERT INTO STUDENT VALUES(?,?,?)";
+	private JLabel lno,lname,lm1,lm2,lm3,lres;
+	private JTextField tname,tm1,tm2,tm3,tres;
+	private JButton bdetails,bresult;
+	private JComboBox tno;
+	private Statement st;
+	private ResultSet rs1,rs2;
+	private CallableStatement cs;
+	private Connection con;
+	private PreparedStatement ps;
+	public GuiAppUsingThreeStatement() {
+		System.out.println("o param constructor");
+		//super class method directly invoked in child class
+		setTitle("MINI PROJECT ");
+		setBackground(Color.green);
+		setLayout(new FlowLayout());
+		setSize(250,250);
+		lno=new JLabel("Student Id:");
+		add(lno);
+		tno=new JComboBox();
+		add(tno);
+		bdetails=new JButton("details");
+		bdetails.addActionListener(this);
+		add(bdetails);
+		lname=new JLabel("Name");
+		add(lname);
+		tname=new JTextField(10);
+		add(tname);
+		lm1=new JLabel("marks1");
+		add(lm1);
+		tm1=new JTextField();
+		add(tm1);
+		lm2=new JLabel("marks2");
+		add(lm2);
+		tm2=new JTextField();
+		add(tm2);
+		lm3=new JLabel("marks3");
+		add(lm3);
+		tm3=new JTextField();
+		add(tm3);
+		bresult=new JButton("result");
+		bresult.addActionListener(this);
+		add(bresult);
+		lres=new JLabel("result");
+		add(lres);
+		tres=new JTextField(10);
+		add(tres);
+		//disabling text field for editing
+		tname.setEditable(false);
+		tm1.setEditable(false);
+		tm2.setEditable(false);
+		tm3.setEditable(false);
+		tres.setEditable(false);
+		setVisible(true);
+		this.addWindowListener(new MyWindowAdapter());
+		loadItems();
+	}//constructor
+	
+	private void loadItems() {
+		System.out.println("load item ()");
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			con=DriverManager.getConnection("jdbc:oarcle:thin:@localhost:1521:xe","system","tiger");
+			if(con!=null)
+				st=con.createStatement();
+			if(st!=null)
+				rs1=st.executeQuery("select sno from student_marks");
+				if(rs1!=null) {
+					while(rs1.next()) {
+						tno.addItem(rs1.getInt(1));
+						
+					}//while
+				}//if
+				if(con!=null)
+					ps=con.prepareStatement("select *from student_marks where sno=?");
+					if(con!=null) {
+						cs=con.prepareCall("{call find_pass_fail(?,?,?,?)}");
+						cs.registerOutParameter(4,Types.VARCHAR);
+					}//if
+		   }//try
+			catch(SQLException se) {
+				se.printStackTrace();
+			}
+			catch(ClassNotFoundException cnf) {
+				cnf.printStackTrace();
+			}
+		}//load item
+	
+	
+}//class

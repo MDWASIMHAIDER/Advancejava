@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	function send(cap){
+		alert("hi");
+		if(cap=="sum"){
+			frm.s1.value="add";
+		}
+		else if(cap=="diff"){
+			frm.s1.value="sub";
+		}
+		else if(cap=="prod"){
+			frm.s1.value="mul";
+		}
+		frm.submit();
+	}
+</script>
+</head>
+<body>
+	<h1 style="text-align:center;color:darkgreen">Calculation Using Multiple Hyperlink Button</h1>
+	<form name="frm" action="processurl" method="GET">
+		Value1::<input type="text/html" name="v1"/><br>
+		Value2::<input type="text/html" name="v2"/><br>
+		<input type="hidden" name="s1" />
+		<input type="button" value="sum" onclick="send(this.value)">&nbsp;&nbsp;&nbsp;
+		<input type="button" value="diff" onclick="send(this.value)"/>&nbsp;&nbsp;&nbsp;
+		<input type="button" value="prod" onclick="send(this.value)"/>
+	</form>
+</body>
+</html>

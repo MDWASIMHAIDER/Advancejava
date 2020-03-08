@@ -1,0 +1,9 @@
+package com.nt.beans;
+
+public class StudentBeans {
+
+	public StudentBeans() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

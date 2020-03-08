@@ -1,0 +1,7 @@
+127.0.0.1 - - [09/Dec/2018:20:57:38 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [09/Dec/2018:20:57:38 +0530] "GET /CountryApp/ HTTP/1.1" 200 517
+0:0:0:0:0:0:0:1 - - [09/Dec/2018:20:57:42 +0530] "GET /CountryApp/countryurl?country=india HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [09/Dec/2018:20:57:44 +0530] "GET /CountryApp/country.html HTTP/1.1" 200 517
+0:0:0:0:0:0:0:1 - - [09/Dec/2018:20:57:46 +0530] "GET /CountryApp/countryurl?country=indo HTTP/1.1" 200 75
+127.0.0.1 - - [09/Dec/2018:21:36:05 +0530] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [09/Dec/2018:21:36:09 +0530] "GET /CountryApp/countryurl?country=india HTTP/1.1" 200 76
